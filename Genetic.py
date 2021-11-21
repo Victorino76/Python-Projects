@@ -133,7 +133,7 @@ def block_swap(L=[]):
 
 
 # 6) Putting it all together with the basic GA
-def genetic(gen_limit=10000, pop_size=100, c_rate=.5, m_rate=.1):
+def genetic(gen_limit=100, pop_size=100, c_rate=.5, m_rate=.1):
     gens = 0
     best = None
     t = selection(population(get_tsp(), pop_size))  # list of tours with length pop_size
